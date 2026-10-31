@@ -1,4 +1,6 @@
 # AI SMS Spam Detector
+## Live Demo
+https://ai-sms-spam-detector-ohkj.onrender.com/
 
 ## Project Overview
 This project uses Machine Learning and Natural Language Processing (NLP) to classify SMS messages as Spam or Ham (Not Spam).
