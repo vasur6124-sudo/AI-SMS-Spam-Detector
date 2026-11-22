@@ -1,14 +1,15 @@
+
 from flask import Flask, render_template, request
 import pickle
 
 app = Flask(__name__)
 
-# Load the saved machine-learning model
-with open("model.pkl", "rb") as file:
+# Load Version 2 model
+with open("model_v2.pkl", "rb") as file:
     model = pickle.load(file)
 
-# Load the saved TF-IDF vectorizer
-with open("vectorizer.pkl", "rb") as file:
+# Load Version 2 vectorizer
+with open("vectorizer_v2.pkl", "rb") as file:
     tfidf = pickle.load(file)
 
 
@@ -29,6 +30,7 @@ def home():
         prediction=prediction,
         message=message
     )
+
 
 if __name__ == "__main__":
     app.run(debug=False)
